@@ -1,0 +1,221 @@
+
+/* START HERO */
+
+.hero-section{
+    min-height: calc(100vh - 13.4rem);
+    background-color: var(--bcg-color);
+    padding: 5rem 0;
+}
+@media (max-width: 62em){
+    .hero-section{
+        min-height: auto;
+        padding: 10rem 0;
+    }
+}
+.hero-section .container{
+    display: flex;
+    gap: 5rem;
+}
+.hero-text{
+    display: flex;
+    align-items: center;
+}
+.hero-heading{
+    font-size: 6rem;
+    line-height: 1.2;
+    color: var(--main-color);
+    margin-bottom: 1rem;
+}
+@media (max-width: 62em){
+    .hero-btn{
+        margin-bottom: 0;
+    }
+}
+@media (max-width: 48em){
+    .hero-heading{
+        font-size: 4rem;
+    }
+}
+.hero-descr{
+    font-size: 1.6rem;
+    color: var(--p-color);
+    line-height: var(--main-line-height);
+    margin-bottom: 5rem;
+}
+@media (max-width: 48em){
+    .hero-img{
+        display: none;
+    }
+}
+
+/* END HERO */
+
+/* START COLLECTION */
+
+.collection-section{
+    padding: var(--section-padding) 0;
+    background-color: var(--bcg-color);
+}
+.collection-heading{
+    text-align: center;
+}
+.collection-descr{
+    font-size: 1.5rem;
+    color: var(--p-color);
+    line-height: var(--main-line-height);
+    width: 50rem;
+    margin: 0 auto 3rem;
+}
+@media (max-width: 62em){
+    .collection-descr{
+        width: auto;
+    }
+}
+.collection-heading .btn{
+    letter-spacing: normal;
+    display: block;
+    width: fit-content;
+    margin: 0 auto 3rem;
+}
+.collection-section .coll-item{
+    background-color: #fff; 
+}
+.collection-section .coll-item-info{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* END COLLECTION */
+
+/* START CTA */
+
+.cta-section{
+    padding: 0 0 var(--section-padding);
+    text-align: center;
+}
+.cta-heading{
+    background-color: var(--gray-color);
+    padding: var(--section-padding);
+    margin-bottom: 3rem;
+}
+.cta-msg{
+    font-size: 4.5rem;
+    color: var(--p-color);
+}
+.cta-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width: 62em){
+    .cta-form{
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
+.cta-form label{
+    font-size: 2.5rem;
+    margin-right: 5rem;
+}
+.cta-form input{
+    font-size: 1.6rem;
+    height: 4.5rem;
+    width: 30%;
+    padding: 1.5rem 1rem;
+    border: none;
+    border: .1rem solid var(--main-color);
+    margin-right: 2rem;
+    outline: none;
+}
+@media (max-width: 62em){
+    .cta-form label{
+        margin-right: 0;
+    }
+    .cta-form input{
+        margin-right: 0;
+        width: 60%;
+    }
+}
+@media (max-width: 48em){
+    .cta-form input{
+        width: 100%;
+    }
+}
+.cta-form input::placeholder{
+    font-size: 1.5rem;
+}
+.cta-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4.5rem;
+    font-size: 1.6rem;
+    padding: .5rem 2rem;
+    color: #fff;
+    background-color: var(--main-color);
+    transition: all var(--main-transition);
+}
+.cta-btn:hover{
+    color: #000;
+    border: .1rem solid var(--main-color);
+    background-color: #fff;
+}
+
+/* END CTA */
+
+/* START STORY */
+
+.story-section{
+    padding: var(--section-padding) 0;
+}
+.story-section .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15rem;
+}
+.story-section img{
+    width: 35rem;
+    max-width: 100%;
+}
+@media (max-width: 62em){
+    .story-section img{
+        display: none;
+    }
+    .story-text{
+        text-align: center;
+    }
+}
+.story-heading{
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+.story-section .gabo-logo{
+    display: block;
+    width: fit-content;
+    color: var(--main-color);
+    border-color: var(--main-color);
+    margin-bottom: 3rem;
+}
+@media (max-width: 62em){
+    .story-section .gabo-logo{
+        margin: 0 auto 3rem;
+    }
+}
+.story{
+    font-size: 1.6rem;
+    color: var(--p-color);
+    line-height: var(--main-line-height);
+    margin-bottom: 3rem;
+}
+.story-section .btn{
+    display: block;
+    width: fit-content;
+    letter-spacing: normal;
+}
+@media (max-width: 62em){
+    .story-section .btn{
+        margin: 0 auto;
+    }
+}
+/* END STORY *
